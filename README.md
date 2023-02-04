@@ -1,5 +1,5 @@
 
-# browsers viewd context statics
+# browsers viewd context statictics
 This project meantto get statictics on usage of the contect read on on the browser and count it and summerize it 
 
 # browser contect statictics 
