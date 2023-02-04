@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "ChatGPT Query Extension",
+  "version": "1.0",
+"content_scripts": [
+  {
+  "matches": ["*"],
+  "js": ["contentscript.js"]
+  }
+],
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab"
+  ]
+}
