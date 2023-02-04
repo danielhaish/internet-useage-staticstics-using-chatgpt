@@ -1,29 +1,21 @@
 
 
-# browsers viewd context statictics
+Browser Content Statistics
+This project is aimed at collecting statistics on the content viewed in browsers and summarizing it. The goal is to provide valuable insights into internet usage patterns.
 =======
 
-This project meantto get statictics on usage of the contect read on on the browser and count it and summerize it 
 
-# browser contect statictics 
-This project meant to help parents to spy on theirs kids and see what the major use is of the internet. 
+Note:
+While this project utilizes the capabilities of a language model like OpenAI's ChatGPT, it is not considered a reliable tool for monitoring internet activity.
 
+The purpose of this program is not to spy on individuals, but to gather statistics for organizations with their consent.
 
-Warning
-===========
-This project  using chatgpt so dont turst it as armtic tools
+Usage:
+This project can be used by researchers to study internet usage patterns and help organizations improve their online content. Additionally, it can assist parents in monitoring and understanding their children's internet activity.
 
-This program doesnt meant to be used to spy on people but to test and get statics on organization and should get their agreemnet 
+Future Development:
 
-Usage
-========
-This may used for reashers to check the type of usages in the intrent
-And help those group to improve.
-help parents understand the situation of thiers kids
-
-To Do
-==========
-Send parent email whehn contect is considered "unsafe"
-Make nice view of data collected in using graphs and time.
-make it possilbe to add context subjects easlly
-Add the ablity to add token to api
+Notify parents via email if viewed content is deemed "unsafe."
+Present collected data in a visually appealing manner using graphs and time-series analysis.
+Enable easy addition of new content subjects.
+Add the ability to incorporate tokens for API access.
