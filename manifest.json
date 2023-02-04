@@ -4,8 +4,8 @@
   "version": "1.0",
 "content_scripts": [
   {
-  "matches": ["*"],
-  "js": ["contentscript.js"]
+  "matches": ["http://*/*"],
+  "js": ["querygpt.js"]
   }
 ],
   "browser_action": {
