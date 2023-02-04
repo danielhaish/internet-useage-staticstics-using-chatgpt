@@ -3,7 +3,7 @@ This project meant to help parents to spy on theirs kids and see what the major 
 
 Warning
 ===========
-THis project using chatgpt so dont turst it as eermtric thins
+THis project  using chatgpt so dont turst it as eermtric thins
 
 TO Do
 ==========
