@@ -1,4 +1,4 @@
-# parents-spy-using-gpt
+# browser contect statictics 
 This project meant to help parents to spy on theirs kids and see what the major use is of the internet. 
 
 Warning
