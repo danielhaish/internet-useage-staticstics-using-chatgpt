@@ -1,4 +1,6 @@
 <html>
+<div id="data">
+</div>
   <head>
     <style>
       input[type="text"] {
@@ -29,39 +31,27 @@
         background-color: #f2f2f2;
       }
     </style>
+
   </head>
   <body>
-    <form>
-      <input type="text" id="query" placeholder="Enter your query">
-      <button type="submit">Submit</button>
-    </form>
+    <button id="load" onclick="load_subjects_table()">Load data</button>
     <div class="response" id="response"></div>
   </body>
   <script>
+	function load_subjects_table(){
+	document.getElementById("response").innerHTML = "";
+	chrome.storage.sync.get(null, function(items) {
+		
+    		items.forEach(item => { 
+			const node = document.createElement("li");
+			const textnode = document.createTextNode(item);
+			node.appendChild(textnode);
+                  document.getElementById("response").appendChild(node);
 
-    const form = document.querySelector("form");
-    const responseDiv = document.querySelector("#response");
-    form.addEventListener("submit", async event => {
-      event.preventDefault();
-      const query = document.querySelector("#query").value;
-      responseDiv.innerHTML = "Loading...";
-      const response = await fetch("https://api.openai.com/v1/completions", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "Authorization": "Bearer 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"
-        },
-        body: JSON.stringify({
-	    "model": "content-filter-alpha",
-          prompt: query,
-          max_tokens: 100,
-          n: 1,
-          stop: "",
-          temperature: 0.5
-        })
-      });
-      const data = await response.json();
-      responseDiv.innerHTML = data.choices[0].text;
-    });
+            })
+	});
+		
+	}
+	
   </script>
 </html>

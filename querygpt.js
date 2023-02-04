@@ -33,7 +33,7 @@ chat_query = "please classify the folowing context if the context is not good fo
 	if (typeof resault !== "undefined"){
         resault = 0 ;
        }
-	chrome.storage.local.set({ first_word: resault + 1 }).then(() => {
+	chrome.storage.local.set({ first_word: (+resault + 1).toString() }).then(() => {
        
    });
 });
