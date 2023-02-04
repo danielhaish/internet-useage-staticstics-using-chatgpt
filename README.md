@@ -1,6 +1,9 @@
 
+
 Browser Content Statistics
 This project is aimed at collecting statistics on the content viewed in browsers and summarizing it. The goal is to provide valuable insights into internet usage patterns.
+=======
+
 
 Note:
 While this project utilizes the capabilities of a language model like OpenAI's ChatGPT, it is not considered a reliable tool for monitoring internet activity.
